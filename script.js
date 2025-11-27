@@ -140,7 +140,7 @@ function fireConfetti() {
 ------------------------------ */
 
 function playMusic() {
-    ytplayer.src = "https://www.youtube.com/embed/x0tNKV0XYYM?autoplay=1&controls=0";
+     ytplayer.src = "https://www.youtube.com/embed/x0tNKV0XYYM?autoplay=1&mute=0&controls=0&enablejsapi=1";
 }
 
 /* ------------------------------
