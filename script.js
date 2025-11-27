@@ -84,7 +84,7 @@ function typeWriter(text, element, speed = 55, callback) {
 ------------------------------ */
 
 function startEmojiRain() {
-    const emojiArray = ["💖", "💕", "💝", "💓", "❤️", "💗", "💞"];
+    const emojiArray = ["💖", "💕", "💝", "💓", "❤️", "💞"];
     const container = document.querySelector(".emoji-rain");
 
     setInterval(() => {
