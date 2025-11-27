@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday Amma ❤️</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Scene 1 -->
+    <div id="scene1" class="scene active">
+        <img src="assets/mom.jpg" alt="Mom Photo" class="mom-photo">
+
+        <button id="hugBtn" class="hug-btn">
+            Click here for a virtual hug 🤗💖
+        </button>
+    </div>
+
+    <!-- Scene 2 -->
+    <div id="scene2" class="scene hidden">
+        <!-- Floating balloons -->
+        <div class="balloons"></div>
+
+        <!-- Emoji Rain -->
+        <div class="emoji-rain"></div>
+
+        <!-- Typewriter Letter -->
+        <div id="letter" class="letter"></div>
+
+        <!-- Handwriting I love you -->
+        <div id="finalLove" class="final-love hidden">
+            I love you
+        </div>
+
+        <div class="signature">
+            with love, your son Manideep ❤️
+        </div>
+
+        <!-- YouTube Player -->
+        <iframe
+            id="ytplayer"
+            type="text/html"
+            class="hidden"
+            width="0"
+            height="0"
+            src=""
+            frameborder="0">
+        </iframe>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

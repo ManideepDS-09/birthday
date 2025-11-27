@@ -1,0 +1,181 @@
+/* ------------------------------
+   Global Styling + Background
+------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(160deg, #ffdde1, #ee9ca7);
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Scenes */
+.scene {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.scene.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scene.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------
+   Scene 1 Styles
+------------------------------ */
+
+.mom-photo {
+    width: 70%;
+    max-width: 280px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+.hug-btn {
+    padding: 16px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    background: #ff6fb2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.hug-btn:hover {
+    transform: scale(1.07);
+    background: #ff4b9d;
+}
+
+/* ------------------------------
+   Scene 2 – Letter
+------------------------------ */
+
+.letter {
+    font-size: 18px;
+    width: 90%;
+    max-width: 480px;
+    margin: 40px auto 20px auto;
+    white-space: pre-line;
+    line-height: 1.6;
+    color: #5a0034;
+    font-weight: 500;
+}
+
+/* Signature */
+.signature {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #7a004c;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   Typewriter Animation
+------------------------------ */
+
+.typing {
+    border-right: 3px solid rgba(0,0,0,0.7);
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+    0% { border-color: transparent; }
+    50% { border-color: rgba(0,0,0,0.7); }
+    100% { border-color: transparent; }
+}
+
+/* ------------------------------
+   Final "I love you" handwriting
+------------------------------ */
+
+.final-love {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #d10057;
+    margin-top: 20px;
+    animation: handwriting 4s ease forwards;
+    opacity: 0;
+}
+
+.final-love.hidden {
+    display: none;
+}
+
+@keyframes handwriting {
+    0% { opacity: 0; clip-path: inset(0 100% 0 0); }
+    100% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+
+/* ------------------------------
+   Emoji Rain
+------------------------------ */
+
+.emoji-rain {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Each emoji */
+.emoji {
+    position: absolute;
+    font-size: 32px;
+    animation: fall linear infinite;
+    opacity: 0.9;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+/* ------------------------------
+   Balloons Floating
+------------------------------ */
+
+.balloons {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.balloon {
+    position: absolute;
+    width: 50px;
+    animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(110vh);
+    }
+    100% {
+        transform: translateY(-20vh);
+    }
+}
